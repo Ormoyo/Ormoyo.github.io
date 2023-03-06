@@ -34,6 +34,14 @@ body {
     filter: blur(var(--backgroundBlur))
 }
 
+#app-mount .popout-TdhJ6Z::before {
+	box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, var(--overlay-brightness, var(--popout-modal-brightness)));
+}
+
+#app-mount .userPopoutOuter-3AVBmJ::before {
+	box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, var(--overlay-brightness));
+}
+
 .app-2CXKsg,
 .applicationStore-2nk7Lo,
 .chat-2ZfjoI,
@@ -2695,8 +2703,4 @@ div[aria-label=GUILD_SETTINGS] .topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.it
 /* Search */
 .searchBar-jGtisZ, .searchHeader-1r_ZSh, .searchResult-O9NDji {
     background-color: var(--backgroundColor);
-}
-
-#app-mount .popout-TdhJ6Z::before {
-	box-shadow: inset 0 0 0 100vmax rgb(0, 0, 0, var(--overlay-brightness, var(--popout-modal-brightness)));
 }
